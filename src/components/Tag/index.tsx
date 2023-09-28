@@ -1,5 +1,9 @@
-export default function Tag() {
+type TagProps = {
+  text: string;
+}
+
+export default function Tag({text}: TagProps) {
   return (
-    <div>Tag</div>
+    <div className="tag">{text}</div>
   )
 }
